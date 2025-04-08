@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesoreria y Bancos</title>
+    <link rel="stylesheet" href="ordenDePago.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="img/ordenDePago.png" width="100">
+        <div id="menu">
+            <a href="listaDeBancos.html" class="otros">Bancos</a>
+            <a href="proveedores.html" class="otros">Proveedores</a>
+            <a href="ordenDePago.html" class="actual">Orden de pago</a>
+            <a href="login.html" class="otros">Cerrar Sesión</a>
+        </div>
+
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Orden De Pago</h1>
+        </div>
+        
+<div class="container">
+    <div class="form-container">
+        <div>
+            <label for="proveedor">Proveedor:</label>
+            <input list="listaProveedores" id="proveedor" name="proveedor" placeholder="Seleccione o escriba...">
+        
+            <datalist id="listaProveedores">
+                <option value="Proveedor 1">
+                <option value="Proveedor 2">
+                <option value="Proveedor 3">
+            </datalist>
+        </div>
+        
+        <div>
+            <label for="desde">Desde:</label>
+            <input type="date" id="desde">
+        </div >
+        <div>
+            <label for="hasta">Hasta:</label>
+            <input type="date" id="hasta">
+        </div>
+        <button id="BuscarOrden">Buscar</button>
+    </div>
+
+    
+
+    <table>
+        <h2>Facturas Pendientes a Pago</h2>
+        <tr>
+            <th>Fecha</th>
+            <th>N° Factura</th>
+            <th>Total</th>
+            <th>Saldo</th>
+            <th>Aplica</th>
+            <th>Seleccionar</th>
+        </tr>
+        <tr>
+            <td>12-04-2024</td>
+            <td>001.001.000011</td>
+            <td>750.000</td>
+            <td>0</td>
+            <td>750.000</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>22-05-2024</td>
+            <td>001.001.000012</td>
+            <td>254.256</td>
+            <td>0</td>
+            <td>254.256</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>15-03-2024</td>
+            <td>001.001.000013</td>
+            <td>789.245</td>
+            <td>0</td>
+            <td>789.245</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>17-06-2024</td>
+            <td>001.001.000014</td>
+            <td>1.000.000</td>
+            <td>0</td>
+            <td>1.000.000</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>11-08-2024</td>
+            <td>001.001.000015</td>
+            <td>452.358</td>
+            <td>0</td>
+            <td>452.358</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>27-09-2024</td>
+            <td>001.001.000016</td>
+            <td>985.125</td>
+            <td>0</td>
+            <td>985.125</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>01-10-2024</td>
+            <td>001.001.000017</td>
+            <td>500.000</td>
+            <td>0</td>
+            <td>500.000</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>05-11-2024</td>
+            <td>001.001.000018</td>
+            <td>1.250.000</td>
+            <td>0</td>
+            <td>1.250.000</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>25-12-2024</td>
+            <td>001.001.000019</td>
+            <td>1.500.000</td>
+            <td>0</td>
+            <td>1.500.000</td>
+            <td><input type="checkbox"></td>
+        </tr>
+    </table>
+
+    <div class="pagination">
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>...</button>
+        <button>20</button>
+    </div>
+
+    <button id = GenerarORden>Generar Orden De Pago</button>
+</div>
+
+        </div>
+    </div>
+</body>

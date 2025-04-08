@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2EFE7;
+    display: flex;
+
+}
+
+#botonesHeader button {
+    background-color: #265073;
+    align-items: center;
+    padding: 0px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #008DB1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    align-items: center;
+
+}
+
+.sidebar a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+#menu {
+    margin-top: 115px;
+}
+
+.sidebar a.actual {
+    background-color: #006E8C;
+    color: white;
+    margin: 0px;
+    padding: 20px 98px;
+    white-space: nowrap;
+}
+
+.sidebar img {
+    position: absolute;
+}
+
+.main-content {
+    flex: 5;
+}
+
+.header {
+    background-color: #265073;
+    height: 115px;
+    color: white;
+    padding: 0px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header h1 {
+    margin-left: 385px;
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0px 0px;
+    width: 100%;
+}
+
+.menu li {
+    margin-top: -15.9px;
+    flex: 1;
+    text-align: center;
+    height: 100px;
+    border-color: 0.5px solid black;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    padding: 2px 0px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.menu a.actual {
+    border-bottom: 3px solid #0b6c83;
+    color: #F2EFE7;
+    background-color: #2D9596;
+    font-weight: bold;
+}
+
+.saldo-total {
+    background-color: #265073;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin: -85px auto;
+    border-radius: 20px;
+    font-size: 1.4em;
+    width: 30%;
+    max-width: 600px;
+}
+
+.tabla-movimientos {
+    margin: 40px;
+    margin-top: 100px;
+    background-color: #F2EFE7;
+    padding: 0px;
+}
+
+.tabla-movimientos table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.tabla-movimientos th,
+.tabla-movimientos td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tabla-movimientos th {
+    background-color: #265073;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #F2EFE7;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+.pagination {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: #F6F6F6;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination .active {
+    background-color: #006E8C;
+    color: white;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesoreria y Bancos</title>
+    <link rel="stylesheet" href="conciliacion.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="img/Movimientos.png" width="130">
+        <div id="menu">
+            <a href="listaDeBancos.html" class="actual">Bancos</a>
+            <a href="proveedores.html" class="otros">Proveedores</a>
+            <a href="ordenDePago.html" class="otros">Orden de pago</a>
+            <a href="login.html" class="otros">Cerrar Sesión</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>UENO BANK - Caja de Ahorro</h1>
+            <div id="botonesHeader">
+                <button onclick="mostrarAgregar()">
+                    <img src="img/agregarMovimiento.png" width="80">
+                </button>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="menu">
+                <li><a href="movimientosBancarios.html">Movimientos</a></li>
+                <li><a href="conciliacion.html" class="actual">Conciliaciones</a></li>
+            </ul>
+        </div>
+        <div class="form">
+            <div class="input-group">
+                <label for="fecha">Fecha</label>
+                <input type="text" id="fecha" value="03/30/2025">
+            </div>
+            <div class="input-group">
+                <label for="saldo-anterior">Saldo Anterior</label>
+                <input type="text" id="saldo-anterior" value="0.00">
+            </div>
+            <div class="input-group">
+                <label for="saldo-segundo">Saldo Segundo Edo. Cta</label>
+                <input type="text" id="saldo-segundo" value="2.200.000">
+            </div>
+            <div class="input-group">
+                <label for="saldo-actual">Saldo Actual</label>
+                <input type="text" id="saldo-actual" value="2.200.000">
+            </div>
+            <button id="botonConciliar">Conciliar</button>
+        </div>
+        <div class="tablaConciliacion">
+            <table class=>
+                <thead>
+                    <tr>
+                        <th>REFERENCIA</th>
+                        <th></th>
+                        <th>FECHA EMISIÓN</th>
+                        <th>FECHA CONCILIACION</th>
+                        <th>MONTO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>009</td>
+                        <td><input type="checkbox"></td>
+                        <td>24/03/2024</td>
+                        <td></td>
+                        <td>2.200.000</td>
+                    </tr>
+                    <tr>
+                        <td>008</td>
+                        <td><input type="checkbox"></td>
+                        <td>23/03/2024</td>
+                        <td>29/03/2024</td>
+                        <td>1.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>007</td>
+                        <td><input type="checkbox"></td>
+                        <td>22/03/2024</td>
+                        <td>28/03/2024</td>
+                        <td>2.800.000</td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <td><input type="checkbox"></td>
+                        <td>21/03/2024</td>
+                        <td>26/03/2024</td>
+                        <td>3.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td><input type="checkbox"></td>
+                        <td>20/03/2024</td>
+                        <td>24/03/2024</td>
+                        <td>1.540.000</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td><input type="checkbox"></td>
+                        <td>19/03/2024</td>
+                        <td>22/03/2024</td>
+                        <td>800.000</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td><input type="checkbox"></td>
+                        <td>18/03/2024</td>
+                        <td>21/03/2024</td>
+                        <td>150.000</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td><input type="checkbox"></td>
+                        <td>17/03/2024</td>
+                        <td>19/03/2024</td>
+                        <td>950.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination">
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>...</button>
+            <button>20</button>
+        </div>
+    </div>
+</body>

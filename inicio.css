@@ -1,0 +1,88 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:#F2EFE7;
+}
+
+.header {
+    background-color: #265073;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+}
+
+.home-icon {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home-icon img {
+    width: 130px;
+    height: 130px;
+}
+
+.subtitle {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 0.5px solid black;
+    padding-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 188px;
+    margin-top: 100px;
+}
+
+.button {
+    background-color: #9AD0C2;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button span{
+    margin-top: 250px;
+}
+
+.button img {
+    width: 215px;
+    height: 235px;
+    object-fit: cover;
+    display: block;
+    margin: auto; 
+}
+
+.button:hover {
+    background-color:  #9AD0C2;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

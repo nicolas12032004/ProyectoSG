@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesoreria y Bancos</title>
+    <link rel="stylesheet" href="movimientosBancarios.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="img/Movimientos.png" width="130">
+        <div id="menu">
+            <a href="listaDeBancos.html" class="actual">Bancos</a>
+            <a href="proveedores.html" class="otros">Proveedores</a>
+            <a href="ordenDePago.html" class="otros">Orden de pago</a>
+            <a href="login.html" class="otros">Cerrar Sesión</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>UENO BANK - Caja de Ahorro</h1>
+            <div id="botonesHeader">
+                <button onclick="mostrarAgregar()">
+                    <img src="img/agregarMovimiento.png" width="80">
+                </button>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="menu">
+                <li><a href="movimientosBancarios.html" class="actual">Movimientos</a></li>
+                <li><a href="conciliacion.html">Conciliaciones</a></li>
+            </ul>
+        </div>
+        <div class="saldo-total">
+            <h3>SALDO TOTAL<br>DE LA CUENTA</h3>
+            <p>₲ 54.027.054</p>
+        </div>
+        <div class="tabla-movimientos">
+            <h3>Últimos Movimientos Bancarios</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Referencia</th>
+                        <th>Fecha</th>
+                        <th>Debe</th>
+                        <th>Haber</th>
+                        <th>Tipo</th>
+                        <th>Estado</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pago de Seguro contra Incendios</td>
+                        <td>24/03/20</td>
+                        <td></td>
+                        <td>1.500.000</td>
+                        <td>Cheque</td>
+                        <td>Emitido</td>
+                        <td><button>📄</button></td>
+                    </tr>
+                    <tr>
+                        <td>Alquiler de Salón de Eventos</td>
+                        <td>23/03/20</td>
+                        <td>8.000.000</td>
+                        <td></td>
+                        <td>Transferencia</td>
+                        <td></td>
+                        <td><button>📄</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pago de Obras en Planta Baja</td>
+                        <td>22/03/20</td>
+                        <td></td>
+                        <td>2.800.000</td>
+                        <td>Cheque</td>
+                        <td>Emitido</td>
+                        <td><button>📄</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pago de Almuerzo de Empleados</td>
+                        <td>21/03/20</td>
+                        <td></td>
+                        <td>300.000</td>
+                        <td>Transferencia</td>
+                        <td></td>
+                        <td><button>📄</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pago de Reparación de inmobiliario</td>
+                        <td>20/03/20</td>
+                        <td></td>
+                        <td>500.000</td>
+                        <td>Transferencia</td>
+                        <td></td>
+                        <td><button>📄</button></td>
+                    </tr>
+                    <tr>
+                        <td>Cobro de Alquiler de Quincho</td>
+                        <td>19/03/20</td>
+                        <td>1.400.000</td>
+                        <td></td>
+                        <td>Transferencia</td>
+                        <td></td>
+                        <td><button>📄</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pago a Proveedor</td>
+                        <td>18/03/20</td>
+                        <td>1.300.000</td>
+                        <td></td>
+                        <td>Cheque</td>
+                        <td>Conciliado</td>
+                        <td><button>📄</button></td>
+                    </tr>
+                    <tr>
+                        <td>Compra de torta de cumpleaños</td>
+                        <td>17/03/20</td>
+                        <td></td>
+                        <td>80.000</td>
+                        <td>Transferencia</td>
+                        <td></td>
+                        <td><button>📄</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>...</button>
+                <button>20</button>
+            </div>
+        </div>
+    </div>
+</body>

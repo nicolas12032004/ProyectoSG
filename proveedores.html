@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Proveedor</title>
+  <link rel="stylesheet" href="proveedores.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <img src="img/icono1.png" alt="Logo" width="60" height="56" style="margin-top: 20px;">
+    <a href="listaDeBancos.html">Bancos</a>
+    <a href="proveedores.html" class="actual">Proveedores</a>
+    <a href="ordenDePago.html">Orden de pago</a>
+    <a href="login.html" style="margin-top: auto;">Cerrar Sesión</a>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <h1>Proveedor</h1>
+      <img src="img/icono2.png" alt="Agregar Proveedor" width="42" height="36" class="icono-boton"
+        onclick="document.getElementById('modal').style.display='block'">
+    </div>
+
+    <div class="contenido">
+      <div class="buscador">
+        <label for="buscar">Buscar Proveedor</label>
+        <input type="text" id="buscar" placeholder="Buscar (RUC | Nombre | Correo)">
+        <button class="btn-buscar">Buscar</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>RUC</th>
+            <th>Actividad Comercial</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Distribuidora Horeca</td>
+            <td>5896759-8</td>
+            <td>Alimentos y bebidas</td>
+            <td>+595985102897</td>
+            <td>contacto@horecadist.com</td>
+            <td>
+              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
+              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
+            </td>
+          </tr>
+          <tr>
+            <td>Importadora Martínez</td>
+            <td>1548796-3</td>
+            <td>Importación de tecnología</td>
+            <td>+595971456789</td>
+            <td>ventas@importmartinez.com</td>
+            <td>
+              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
+              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
+            </td>
+          </tr>
+          <tr>
+            <td>AgroPar S.A.</td>
+            <td>4785962-5</td>
+            <td>Agroquímicos</td>
+            <td>+595981332211</td>
+            <td>info@agropar.com.py</td>
+            <td>
+              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
+              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
+            </td>
+          </tr>
+          <tr>
+            <td>Construland</td>
+            <td>3012547-1</td>
+            <td>Materiales de construcción</td>
+            <td>+595983112233</td>
+            <td>pedidos@construland.com</td>
+            <td>
+              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
+              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
+            </td>
+          </tr>
+          <tr>
+            <td>Eco Print</td>
+            <td>1247859-9</td>
+            <td>Impresiones y papelería</td>
+            <td>+595991998877</td>
+            <td>eco@printpy.com</td>
+            <td>
+              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
+              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
+            </td>
+          </tr>
+          <tr>
+            <td>Global Repuestos</td>
+            <td>8547962-6</td>
+            <td>Repuestos de vehículos</td>
+            <td>+595981223344</td>
+            <td>contacto@globalrepuestos.com</td>
+            <td>
+              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
+              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
+            </td>
+          </tr>
+          <tr>
+            <td>Farmacenter</td>
+            <td>3054179-0</td>
+            <td>Distribución farmacéutica</td>
+            <td>+595985112200</td>
+            <td>ventas@farmacenter.com</td>
+            <td>
+              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
+              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
+            </td>
+          </tr>
+          <tr>
+            <td>CleanUp S.A.</td>
+            <td>7765412-4</td>
+            <td>Productos de limpieza</td>
+            <td>+595982765432</td>
+            <td>soporte@cleanupsa.com</td>
+            <td>
+              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
+              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
+            </td>
+          </tr>
+          <tr>
+            <td>Distribuciones Frutales</td>
+            <td>1592634-2</td>
+            <td>Frutas y verduras</td>
+            <td>+595980456789</td>
+            <td>frutas@distribuciones.com</td>
+            <td>
+              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
+              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
+            </td>
+          </tr>
+          <tr>
+            <td>Eléctrica Zeta</td>
+            <td>2014579-1</td>
+            <td>Materiales eléctricos</td>
+            <td>+595986123456</td>
+            <td>ventas@zetaelectric.com</td>
+            <td>
+              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
+              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
+            </td>
+          </tr>
+          <tr>
+            <td>TechPy</td>
+            <td>6842513-9</td>
+            <td>Servicios informáticos</td>
+            <td>+595984789456</td>
+            <td>info@techpy.com</td>
+            <td>
+              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
+              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>Agregar Proveedor</h2>
+      <form>
+        <label>Nombre/Razón social</label>
+        <input type="text" placeholder="Nombre del proveedor o razón social">
+        <label>RUC</label>
+        <input type="text" placeholder="RUC">
+        <label>Actividad Comercial</label>
+        <input type="text" placeholder="Actividad comercial">
+        <label>Dirección</label>
+        <input type="text" placeholder="Dirección del proveedor">
+        <label>Teléfono</label>
+        <input type="text" placeholder="Teléfono">
+        <label>Email</label>
+        <input type="email" placeholder="Correo electrónico">
+        <button type="submit" class="btn-guardar">Guardar</button>
+        <button type="button" class="btn-cerrar"
+          onclick="document.getElementById('modal').style.display='none'">Cancelar</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

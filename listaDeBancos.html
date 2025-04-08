@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Bancos</title>
+    <link rel="stylesheet" href="listaDeBancos.css">
+    <script src="listaDeBancos.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="img/Banco.png" width="130">
+        <div id="menu">
+            <a href="listaDeBancos.html" class="actual">Bancos</a>
+            <a href="proveedores.html" class="otros">Proveedores</a>
+            <a href="ordenDePago.html" class="otros">Orden de pago</a>
+            <a href="login.html" class="otros">Cerrar Sesión</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Lista de Bancos</h1>
+            <div id="botonesHeader">
+                <button onclick="mostrarAgregar()">
+                    <img src="img/Agregar.png" width="50">
+                </button>
+            </div>
+        </div>
+        <div class="tarjetas">
+            <a href="movimientosBancarios.html">
+                <div class="tarjeta">
+                    <h2>UENO BANK</h2>
+                    <p>Caja de Ahorro</p>
+                    <p>Nro. Cta: 32132155</p>
+                    <p>Saldo: 54.105.280 GS</p>
+                    <img src="img/Chancho.png" width="160">
+                </div>
+            </a>
+            <a href="movimientosBancarios.html">
+                <div class="tarjeta">
+                    <h2>UENO BANK</h2>
+                    <p>Cuenta Corriente</p>
+                    <p>Nro. Cta: 5646540</p>
+                    <p>Saldo: 28.501.802 GS</p>
+                    <img src="img/Chancho.png" width="160">
+                </div>
+            </a>
+            <a href="movimientosBancarios.html">
+                <div class="tarjeta">
+                    <h2>CONTINENTAL</h2>
+                    <p>Caja de Ahorro</p>
+                    <p>Nro. Cta: 54464100</p>
+                    <p>Saldo: 40.031.221 GS</p>
+                    <img src="img/Chancho.png" width="160">
+                </div>
+            </a>
+            <div class="tarjeta">
+                <h2>CONTINENTAL</h2>
+                <p>Caja de Ahorro</p>
+                <p>Nro. Cta: 54464100</p>
+                <p>Saldo: 40.031.221 GS</p>
+                <img src="img/Chancho.png" width="160">
+            </div>
+            <div class="tarjeta">
+                <h2>CONTINENTAL</h2>
+                <p>Caja de Ahorro</p>
+                <p>Nro. Cta: 54464100</p>
+                <p>Saldo: 40.031.221 GS</p>
+                <img src="img/Chancho.png" width="160">
+            </div>
+            <div class="tarjeta">
+                <h2>CONTINENTAL</h2>
+                <p>Caja de Ahorro</p>
+                <p>Nro. Cta: 54464100</p>
+                <p>Saldo: 40.031.221 GS</p>
+                <img src="img/Chancho.png" width="160">
+            </div>
+            <div class="tarjeta">
+                <h2>UENO BANK</h2>
+                <p>Cuenta Corriente</p>
+                <p>Nro. Cta: 5646540</p>
+                <p>Saldo: 28.501.802 GS</p>
+                <img src="img/Chancho.png" width="160">
+            </div>
+            <div class="tarjeta">
+                <h2>UENO BANK</h2>
+                <p>Cuenta Corriente</p>
+                <p>Nro. Cta: 5646540</p>
+                <p>Saldo: 28.501.802 GS</p>
+                <img src="img/Chancho.png" width="160">
+            </div>
+            <div class="tarjeta">
+                <h2>UENO BANK</h2>
+                <p>Cuenta Corriente</p>
+                <p>Nro. Cta: 5646540</p>
+                <p>Saldo: 28.501.802 GS</p>
+                <img src="img/Chancho.png" width="160">
+            </div>
+            <form id="formularioAgregar">
+                <div id="headerForm1">Agregar Banco</div>
+                <div class="entradas">
+                    <div class="selector">
+                        <label for="pais">País:</label>
+                        <select id="paisSelect">
+                            <option>Paraguay</option>
+                            <option>Argentina</option>
+                            <option>Brasil</option>
+                        </select>
+                    </div>
+                    <div class="selector">
+                        <label for="banco">Banco:</label>
+                        <select id="bancoSelect" onchange="mostrarRegistrarBanco()">
+                            <option value="0">Sudameris</option>
+                            <option value="1">UENO BANK</option>
+                            <option value="2">Continental</option>
+                            <option value="añadirBanco">Añadir banco...</option>
+                        </select>
+                    </div>
+                    <div class="selector">
+                        <label for="tipo-cuenta">Tipo de cuenta:</label>
+                        <select id="tipo-cuentaSelect">
+                            <option>Cuenta Corriente</option>
+                            <option>Caja de ahorro</option>
+                        </select>
+                    </div>
+                    <div class="escritura">
+                        <label for="num-cuenta">Número de Cuenta:</label>
+                        <input type="text" id="num-cuenta" value="512031564">
+                    </div>
+                    <div class="botonesForm">
+                        <button id="guardar">Guardar</button>
+                        <button id="cerrar">Cerrar</button>
+                    </div>
+                </div>
+            </form>
+            <form id="formularioRegistrarBanco">
+                <div id="headerForm1">Registrar Nuevo Banco</div>
+                <div class="entradas">
+                    <div class="escritura">
+                        <label for="nombreDeBanco">Nombre del Banco:</label>
+                        <input type="text" id="NombreBancoRegistrar">
+                    </div>
+                    <div class="escritura">
+                        <label for="direccionDeBanco">Direccion:</label>
+                        <input type="text" id="DireccionBanco">
+                    </div>
+                    <div class="botonesForm">
+                        <button type=button id="guardar"
+                            onclick="guardarRegistroBanco('formularioRegistrarBanco')">Registrar</button>
+                        <button type=button id="cerrar"
+                            onclick="cerrarRegistroBanco('formularioRegistrarBanco')">Volver</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
