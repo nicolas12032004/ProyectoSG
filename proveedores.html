@@ -9,18 +9,23 @@
 
 <body>
   <div class="sidebar">
-    <img src="img/icono1.png" alt="Logo" width="60" height="56" style="margin-top: 20px;">
-    <a href="listaDeBancos.html">Bancos</a>
-    <a href="proveedores.html" class="actual">Proveedores</a>
-    <a href="ordenDePago.html">Orden de pago</a>
-    <a href="login.html" style="margin-top: auto;">Cerrar Sesión</a>
+    <img src="img/icono1.png" width="130">
+    <div id="menu">
+      <a href="listaDeBancos.html" class="otros">Bancos</a>
+      <a href="proveedores.html" class="actual">Proveedores</a>
+      <a href="ordenDePago.html" class="otros">Orden de pago</a>
+      <a href="login.html" class="otros">Cerrar Sesión</a>
+    </div>
   </div>
 
   <div class="main-content">
     <div class="header">
       <h1>Proveedor</h1>
-      <img src="img/icono2.png" alt="Agregar Proveedor" width="42" height="36" class="icono-boton"
-        onclick="document.getElementById('modal').style.display='block'">
+      <div id="botonesHeader">
+        <button onclick="document.getElementById('modal').style.display='block'">
+          <img src="img/icono2.png" width="80">
+        </button>
+      </div>
     </div>
 
     <div class="contenido">
@@ -147,17 +152,6 @@
             <td>Materiales eléctricos</td>
             <td>+595986123456</td>
             <td>ventas@zetaelectric.com</td>
-            <td>
-              <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
-              <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">
-            </td>
-          </tr>
-          <tr>
-            <td>TechPy</td>
-            <td>6842513-9</td>
-            <td>Servicios informáticos</td>
-            <td>+595984789456</td>
-            <td>info@techpy.com</td>
             <td>
               <img src="img/icono3.png" alt="Editar" width="23" height="22" class="icono-accion">
               <img src="img/icono4.png" alt="Eliminar" width="19" height="24" class="icono-accion">

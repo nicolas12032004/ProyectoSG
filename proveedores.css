@@ -4,7 +4,7 @@ body {
   padding: 0;
   background-color: #F2EFE7;
   display: flex;
-  min-height: 100vh;
+  overflow: hidden;
 }
 
 
@@ -14,8 +14,8 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
+  height: 1000px;
   align-items: center;
-  min-height: 100%;
 }
 
 
@@ -25,13 +25,21 @@ body {
   color: white;
   display: block;
   text-align: center;
-  width: 100%;
-  box-sizing: border-box;
+}
+
+#menu {
+  margin-top: 115px;
 }
 
 .sidebar a.actual {
   background-color: #006E8C;
-  border-left: 5px solid white;
+  color: white;
+  margin: 0px;
+  padding: 20px 80px
+}
+
+.sidebar img {
+  position: absolute;
 }
 
 .main-content {
@@ -90,7 +98,8 @@ table {
   margin-top: -10px;
 }
 
-th,td {
+th,
+td {
   padding: 8px;
   text-align: center;
   border: 1px solid #ddd;
@@ -126,6 +135,7 @@ tr:nth-child(even) {
   background-color: #006E8C;
   color: white;
 }
+
 .btn-editar,
 .btn-eliminar {
   padding: 6px 10px;

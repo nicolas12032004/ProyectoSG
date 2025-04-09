@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #F2EFE7;
     display: flex;
-
+    overflow: hidden;
 }
 
 #botonesHeader button {
@@ -96,6 +96,7 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
+    border-bottom: 3px solid #aad4c8;
 }
 
 
@@ -134,9 +135,10 @@ body {
 
 .tabla-movimientos th,
 .tabla-movimientos td {
-    padding: 8px;
+    padding: 6px;
     text-align: center;
     border: 1px solid #ddd;
+    align-items: center;
 }
 
 .tabla-movimientos th {
@@ -144,12 +146,21 @@ body {
     color: white;
 }
 
+
 tr:nth-child(odd) {
     background-color: #F2EFE7;
 }
 
 tr:nth-child(even) {
     background-color: white;
+}
+
+.botonDetalle{
+    margin: -100px;
+    padding: -20px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .pagination {
